@@ -9,7 +9,7 @@ module.exports = {
       'pre-setup': "yum install git -y;",
       'post-setup': "ls -la",
       'pre-deploy-local': "pwd; echo 'this is a local command' ",
-      'pre-deploy': 'ls -la;',
+      'pre-deploy': 'pwd;ls -la;',
       'post-deploy': 'git pull origin master;git log -n 2;',
       'test': 'docker ps;'
     }
