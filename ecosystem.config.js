@@ -11,7 +11,7 @@ module.exports = {
       'pre-deploy-local': "pwd; echo 'this is a local command' ",
       'pre-deploy': 'pwd;ls -la;',
       'post-deploy': 'git pull origin master;git log -n 2;',
-      'test': 'docker ps;'
+      'test': 'pwd;docker ps;'
     }
   }
 };
