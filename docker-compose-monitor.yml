@@ -55,7 +55,6 @@ services:
         container_name: cadvisor
         hostname: cadvisor
         restart: always
-        privileged: true
         volumes:
             - /:/rootfs:ro
             - /var/run:/var/run:rw
