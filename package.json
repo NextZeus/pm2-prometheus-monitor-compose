@@ -7,8 +7,8 @@
   "scripts": {
     "setup": "pm2 deploy production setup",
     "deploy": "pm2 deploy production",
-    "start": "docker-compose -f /data/work/prometheus-monitor/source/config/docker-compose-monitor.yml up -d",
-    "stop": "docker-compose -f /data/work/prometheus-monitor/source/config/docker-compose-monitor.yml down"
+    "start": "docker-compose -f /data/work/prometheus-monitor/source/docker-compose-monitor.yml up -d",
+    "stop": "docker-compose -f /data/work/prometheus-monitor/source/docker-compose-monitor.yml down"
   },
   "keywords": [],
   "author": "",
