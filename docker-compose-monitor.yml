@@ -56,7 +56,7 @@ services:
         hostname: pm2-exporter
         restart: always
         ports:
-            - "9209"
+            - "9209:9209"
         networks:
             - monitor
 
