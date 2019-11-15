@@ -49,6 +49,16 @@ services:
             - "9100:9100"
         networks:
             - monitor
+    
+    pm2-exporter:
+        image: nextzeus/pm2-prometheus-exporter
+        container_name: pm2-exporter
+        hostname: pm2-exporter
+        restart: always
+        ports:
+            - "9209:9209"
+        networks:
+            - monitor
 
     cadvisor:
         image: google/cadvisor:latest
