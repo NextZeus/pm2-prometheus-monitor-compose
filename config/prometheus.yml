@@ -30,3 +30,11 @@ scrape_configs:
     scrape_interval: 8s
     static_configs:
       - targets: ["node-exporter:9100"]
+  - job_name: pm2-metrics
+    scrape_interval: 10s
+    scrape_timeout: 10s
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      - targets:
+          - localhost:9209
