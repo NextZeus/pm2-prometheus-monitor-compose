@@ -34,6 +34,6 @@ scrape_configs:
     scrape_interval: 10s
     scrape_timeout: 10s
     metrics_path: /metrics
-    # scheme: http
+    scheme: http
     static_configs:
       - targets: ["pm2-exporter:9209"]
