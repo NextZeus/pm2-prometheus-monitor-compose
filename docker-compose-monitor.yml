@@ -51,7 +51,7 @@ services:
             - monitor
     
     pm2-exporter:
-        image: nextzeus/pm2-prometheus-exporter
+        image: nextzeus/pm2-prometheus-exporter:latest
         container_name: pm2-exporter
         hostname: pm2-exporter
         restart: always
