@@ -35,8 +35,6 @@ services:
         container_name: grafana
         hostname: grafana
         restart: always
-        volumes: 
-            - /data/grafana-storage:/var/lib/grafana
         ports:
             - "3000:3000"
         networks:
