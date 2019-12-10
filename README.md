@@ -3,13 +3,10 @@
 ### Command
 
 ```
-
-#启动容器：
-docker-compose -f /data/work/prometheus-monitor/config/docker-compose-monitor.yml up -d
-#删除容器：
-docker-compose -f /data/work/prometheus-monitor/config/docker-compose-monitor.yml down
-#重启容器：
-docker restart id
+#启动compose：
+npm run start:local
+#停止compose：
+npm run stop:local
 
 ```
 

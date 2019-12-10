@@ -2,10 +2,11 @@ groups:
 - name: node_down
   rules:
   - alert: InstanceDown
-    expr: up == 0
+    expr: SUM(pm2_instances{status="stopped"}) > 0
     for: 1m
-    labels:
-      user: test
+    # labels:
+    #   user: test
     annotations:
       summary: "Instance {{ $labels.instance }} down"
       description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minutes."
+
