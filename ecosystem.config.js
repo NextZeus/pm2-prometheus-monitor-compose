@@ -5,7 +5,7 @@ module.exports = {
       'host': '47.104.216.30',
       'ref': 'origin/master',
       'repo': 'git@github.com:NextZeus/pm2-prometheus-monitor-compose.git',
-      'path': '/data/work/prometheus-monitor',
+      'path': '/data/work/pm2-prometheus-monitor-compose',
       'pre-setup': "yum install git -y;",
       'post-setup': "ls -la",
       'pre-deploy-local': "pwd; echo 'this is a local command' ",
