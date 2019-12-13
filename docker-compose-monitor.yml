@@ -17,8 +17,8 @@ services:
         hostname: prometheus
         restart: always
         volumes:
-            - /data/work/prometheus-monitor/source/config/prometheus.yml:/etc/prometheus/prometheus.yml
-            - /data/work/prometheus-monitor/source/config/node_down.yml:/etc/prometheus/node_down.yml
+            - /data/work/pm2-prometheus-monitor-compose/source/config/prometheus.yml:/etc/prometheus/prometheus.yml
+            - /data/work/pm2-prometheus-monitor-compose/source/config/node_down.yml:/etc/prometheus/node_down.yml
         ports:
             - "9090:9090"
         networks:
@@ -30,7 +30,7 @@ services:
         hostname: alertmanager
         restart: always
         volumes:
-            - /data/work/prometheus-monitor/source/config/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+            - /data/work/pm2-prometheus-monitor-compose/source/config/alertmanager.yml:/etc/alertmanager/alertmanager.yml
         ports:
             - "9093:9093"
         networks:
