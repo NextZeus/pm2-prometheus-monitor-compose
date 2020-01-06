@@ -2,7 +2,7 @@ module.exports = {
   deploy: {
     production: {
       'user': 'root',
-      'host': '47.104.216.30',
+      'host': '10.1.1.0',
       'ref': 'origin/master',
       'repo': 'git@github.com:NextZeus/pm2-prometheus-monitor-compose.git',
       'path': '/data/work/pm2-prometheus-monitor-compose',
