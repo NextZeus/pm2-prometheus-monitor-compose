@@ -24,6 +24,11 @@ npm run stop:local
 http://promteheus:9090/
 ```
 
+### Show
+
+![](./images/grafana_node.png)
+![](./images/pm2List.png)
+
 
 ## 参考资料
 [prometheus.io](https://prometheus.io/docs/introduction/overview/)
